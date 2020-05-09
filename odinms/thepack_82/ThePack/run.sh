@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 THIS_IP=`grep $HOSTNAME /etc/hosts | awk '{print $1}'`
+WAN_IP="34.105.108.163"
 
 sed -i "s/ODINMS_MYSQL_CONTAINER_IP_ADDRESS/$ODINMS_MYSQL_CONTAINER_IP_ADDRESS/" db.properties
-sed -i "s/THIS_IP/$THIS_IP/" world.properties
+sed -i "s/WAN_IP/$WAN_IP/" world.properties
 sed -i "s/THIS_IP/$THIS_IP/" login.properties
 sed -i "s/THIS_IP/$THIS_IP/" channel.properties
 
