@@ -21,6 +21,10 @@ If you're on a Mac, you can try
 
 Join the [Discord chat channel](https://discord.gg/Y6vjm5f) and ask for an account.
 
+### Commands
+
+You can see all the commands [here](odinms/thepack_82/Commands.txt), including GM commands.
+
 ## More info
 
 Forked from [thepack82](https://github.com/thepack82/thepack_82_docker).
