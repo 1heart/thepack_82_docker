@@ -1,10 +1,27 @@
-# MapleStory v62 Docker Environment
+# MapleStory Private Server
 
-To install, use [original v62 installer](https://kimbershy.stackstorage.com/s/alVFBzaqYoetcxH) and put the [custom client](MapleStoryPrivateServer.exe) in the same folder (typically `C:/Nexon/MapleStory`). Run it in [Windows 7 Compatibility mode](https://www.computerhope.com/issues/ch001894.htm).
+[![Discord Chat](https://img.shields.io/discord/708873302621290556.svg)](https://discord.gg/)
 
-If on Mac, you can try running using [wine](http://forum.ragezone.com/f922/maplestory-v62-linux-wine-896880/); alternatively dualboot using [Bootcamp](https://support.apple.com/boot-cam).
+A v62 MapleStory private server.
 
-## Details
+## Installation
+
+- Use the [original v62 installer](https://kimbershy.stackstorage.com/s/alVFBzaqYoetcxH).
+- Put the [custom client](MapleStoryPrivateServer.exe) in the same folder (typically `C:/Nexon/MapleStory`).
+- Run it in [Windows 7 Compatibility mode](https://www.computerhope.com/issues/ch001894.htm).
+
+### Mac installation
+
+If you're on a Mac, you can try
+
+- Dualboot using [Bootcamp](https://support.apple.com/boot-cam)
+- Try [wine](http://forum.ragezone.com/f922/maplestory-v62-linux-wine-896880/). This is untested.
+
+## Usage
+
+Join the [Discord chat channel](https://discord.gg/Y6vjm5f) and ask for an account.
+
+## More info
 
 Forked from [thepack82](https://github.com/thepack82/thepack_82_docker).
 
