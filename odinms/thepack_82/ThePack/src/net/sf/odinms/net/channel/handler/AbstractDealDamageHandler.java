@@ -128,9 +128,10 @@ public abstract class AbstractDealDamageHandler extends AbstractMaplePacketHandl
                 totDamage += totDamageToOneMonster;
                 player.checkMonsterAggro(monster);
                 Point playerPos = player.getPosition();
+                int MAX_DAMAGE = 999999;
                 if (totDamageToOneMonster > attack.numDamage + 1) {
                     int dmgCheck = player.getCheatTracker().checkDamage(totDamageToOneMonster);
-                    if (dmgCheck > 5 && totDamageToOneMonster < 99999) {
+                    if (dmgCheck > 5 && totDamageToOneMonster < MAX_DAMAGE) {
                         player.getCheatTracker().registerOffense(CheatingOffense.SAME_DAMAGE, dmgCheck + " times: " + totDamageToOneMonster);
                     }
                 }
@@ -283,9 +284,10 @@ public abstract class AbstractDealDamageHandler extends AbstractMaplePacketHandl
             if (theSkill != null) {
                 element = theSkill.getElement();
                 int skillId = theSkill.getId();
+                int MAX_DAMAGE = 999999;
                 switch (skillId) {
                     case 3221007: // Snipe
-                        maximumDamageToMonster = 99999;
+                        maximumDamageToMonster = MAX_DAMAGE;
                         break;
                     case 4221001:
                         maximumDamageToMonster = 400000;

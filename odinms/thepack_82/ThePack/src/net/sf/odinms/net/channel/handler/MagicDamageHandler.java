@@ -27,8 +27,9 @@ public class MagicDamageHandler extends AbstractDealDamageHandler {
 		}
 		player.getMap().broadcastMessage(player, packet, false, true);
 		MapleStatEffect effect = attack.getAttackEffect(c.getPlayer());
+		int MAX_DAMAGE = 999999;
 		int maxdamage;
-		maxdamage = 99999;
+		maxdamage = MAX_DAMAGE;
 		ISkill skill = SkillFactory.getSkill(attack.skill);
 		int skillLevel = c.getPlayer().getSkillLevel(skill);
 		MapleStatEffect effect_ = skill.getEffect(skillLevel);

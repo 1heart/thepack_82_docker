@@ -77,6 +77,7 @@ public class CloseRangeDamageHandler extends AbstractDealDamageHandler {
                 player.cancelEffectFromBuffStat(MapleBuffStat.WK_CHARGE);
             }
         }
+        int MAX_DAMAGE = 999999;
         int maxdamage = c.getPlayer().getCurrentMaxBaseDamage();
         int attackCount = 1;
         if (attack.skill != 0) {
@@ -85,7 +86,7 @@ public class CloseRangeDamageHandler extends AbstractDealDamageHandler {
             maxdamage *= effect.getDamage() / 100.0;
             maxdamage *= attackCount;
         }
-        maxdamage = Math.min(maxdamage, 99999);
+        maxdamage = Math.min(maxdamage, MAX_DAMAGE);
         if (attack.skill == 4211006) {
             maxdamage = 700000;
         } else if (numFinisherOrbs > 0) {
@@ -101,7 +102,7 @@ public class CloseRangeDamageHandler extends AbstractDealDamageHandler {
             return; // can only happen when lagging o.o
         }
         if (isFinisher(attack.skill)) {
-            maxdamage = 99999; // FIXME reenable damage calculation for finishers
+            maxdamage = MAX_DAMAGE; // FIXME reenable damage calculation for finishers
         }
         if (attack.skill > 0) {
             ISkill skill = SkillFactory.getSkill(attack.skill);
